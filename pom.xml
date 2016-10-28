@@ -51,6 +51,6 @@
 			</plugin>
 
 		</plugins>
-		<finalName>gitDome</finalName>
+		<finalName>boke</finalName>
 	</build>
 </project>
