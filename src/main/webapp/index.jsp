@@ -8,5 +8,6 @@
 </head>
 <body>
 	士大 
+	<a href="/boke/user/getUserList">test</a>
 </body>
 </html>
