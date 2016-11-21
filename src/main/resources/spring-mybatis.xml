@@ -50,12 +50,12 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <!-- 自动扫描mapping.xml文件 -->
-        <property name="mapperLocations" value="classpath:com/zsx/web/mapping/*.xml"></property> 
+        <property name="mapperLocations" value="classpath:com/cyg/web/mapping/*.xml"></property> 
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->  
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">  
-        <property name="basePackage" value="com.zsx.web.dao" />
+        <property name="basePackage" value="com.cyg.web.dao" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>  
     </bean>
 
@@ -99,7 +99,7 @@
     <!-- 第四个 .. —— 通配 方法可以有0个或多个参数 -->
     <!-- 事务控制位置，一般在业务层service -->
     <aop:config>
-        <aop:pointcut id="transactionPointcut" expression="execution(* com.zsx.web.service..*Impl.*(..))" />
+        <aop:pointcut id="transactionPointcut" expression="execution(* com.cyg.web.service..*Impl.*(..))" />
             <!-- 多个 expression="(execution(* com.weixin.web.service..*Impl.*(..)))or(execution(* org.weixin.service..*Impl.*(..)))" -->
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" />
     </aop:config>
