@@ -8,6 +8,6 @@
 <body>
 
 	<br> 
-	<a href="/boke/user/getUserList">test</a>
+	<a href="/cygbk/user/getUserList">test</a>
 </body>
 </html>
