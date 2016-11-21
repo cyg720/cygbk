@@ -1,4 +1,4 @@
-package com.cyg.core.interceptors;
+package com.cyg.framework.interceptor;
 
 import java.util.List;
 
