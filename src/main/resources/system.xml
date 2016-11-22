@@ -1,0 +1,6 @@
+<!-- spring mvc 日期转换格式 -->
+<entry key="string_date.format">yyyy-MM-dd,yyyy-MM-dd HH:mm:ss</entry>
+<!-- DateUtil dateToString格式 -->
+<entry key="date_string.format">yyyy-MM-dd</entry>
+<!-- dateUtil datetimeToString 格式 -->
+<entry key="datetime_string.format">yyyy-MM-dd HH:mm:ss</entry>
