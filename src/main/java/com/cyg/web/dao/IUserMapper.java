@@ -4,7 +4,7 @@ import org.apache.ibatis.annotations.Param;
 
 import com.cyg.web.entity.User;
 
-public interface UserMapper {
+public interface IUserMapper {
 
     int deleteByPrimaryKey(@Param(value="id")String id);
 
