@@ -12,11 +12,11 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
     <!-- 注解扫描包 , 多个写法:com.cyg.web.*,org.weixin.*  (以完成bean创建和自动依赖注入的功能)-->
-    <context:component-scan base-package="com.cyg.web.*" >
+    <context:component-scan base-package="com.cyg.*" >
         <!-- springMVC配置文件中将Service注解给去掉 -->
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
-        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" />
-        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository" />
+        <!-- <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" />
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository" /> -->
     </context:component-scan>
 
     <!-- <context:component-scan /> -->
@@ -34,7 +34,7 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 
 
     <!-- 启用spring mvc 注解 -->
-    <!-- <context:annotation-config /> -->
+     <!-- <context:annotation-config /> -->
 
     <!-- 开启注解方案1 -->
     <!-- 注解方法处理 -->
