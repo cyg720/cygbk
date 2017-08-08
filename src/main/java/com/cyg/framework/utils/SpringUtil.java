@@ -1,9 +1,7 @@
 package com.cyg.framework.utils;
 
-import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
@@ -24,15 +22,6 @@ public final class SpringUtil implements BeanFactoryPostProcessor {
         SpringUtil.beanFactory = beanFactory;
     }
 
-    /**
-     * 
-     * @Description 获取指定注解的bean
-     * @return
-     */
-    public static Map<String, Object> getBeansWithAnnotation(Class<? extends Annotation> clz) throws BeansException {
-        return beanFactory.getBeansWithAnnotation(clz);
-    }  
-    
     /**
      * 获取对象
      *

@@ -3,16 +3,11 @@ package com.cyg.web.entity;
 import java.io.Serializable;
 import java.util.Date;
 
-import org.springframework.stereotype.Component;
-
-import com.cyg.framework.annotation.TableName;
-
 /**
  * 用户
  * @author admin
  *
- */  
-@TableName(tableName="p_user")
+ */
 public class User implements Serializable {
 	
     private static final long serialVersionUID = 1L;
